@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'PalatinoLinotype';
+    src: url('../fonts/PalatinoLinotype.ttf');
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro.ttf');
+}
+
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('../fonts/MyriadProBold.otf');
+}
+
+.navbar {
+    background: #311716;
+    color: #ffd700;
+    padding:1.48%;
+}
+
+.navbar-logo {
+    position: relative;
+    top:-15px;
+    left:2px;
+    width: 67%;
+    margin: 1.5%;
+}
+
+.navbar-logo-text {
+    font-family: PalatinoLinotype;
+    font-size: 405%;
+    margin-top:-4%;
+    letter-spacing:-2.5px;
+}
+
+.navbar-info {
+    font-family: MyriadPro;
+    position: relative;
+    top:-25px;
+    padding-right:2.4%;
+    width: 33%;
+    font-size: 150%;
+}
+
+.navbar-info li {
+    padding-top:17%;
+    list-style-type: none;
+    
+}
+
+.navbar-info-text img{
+    padding-right:15px;
+}
+
+.info-text{
+    padding-left: 0px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-family: MyriadProBold;
+    border-top: 2px solid #b0b0b0;
+     background-color: #eebb9c;
+     color:#462927;
+     text-align: center;
+     font-size: 215%;
+     font-weight: 900;
+     letter-spacing:1.5px;
+     line-height: 1.25;
+}
+
+.part{
+    border-top: 5px solid #b0b0b0;
+    border-bottom: 5px solid #b0b0b0;
+    height:110px;
+    text-align: center;
+    background: #311716;
+    color: #ffd700;
+    font-size:72px;
+}
+
+.menu{
+    background-color: #eebb9c;
+    padding:2%;
+}
