@@ -8,39 +8,34 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src='js/main.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg d-flex justify-content-between">
-            <div class="navbar-logo d-flex justify-content-end">
-                <div class="d-flex justify-content-center flex-column">
+        <nav class="navbar d-flex justify-content-between">
+            <div class="navbar-logo d-flex">
                     <img class="d-flex align-self-center" src="image/logo.png">
-                    <h1 class="navbar-logo-text">Золотая рыбка</h1>
-                </div>
+                    <h1 id="textlogo" class="navbar-logo-text d-flex align-self-center">Золотая рыбка</h1>
             </div>
-            <div class="navbar-info d-flex justify-content-end">
-                <ul class="navbar-info-text  d-flex flex-column justify-content-around">
-                    <li class=""><img src="image/calendar.png">Пн-Вс, 9:00-0:00</li>
-                    <li class=""><img src="image/phone-call.png">+7 (978) 725 39 76</li>
-                    <li class=""><img src="image/instagram-logo.png">zolotaya_ribka_crimea</li>
-                </ul>
-            </div>
+            <div class="navbar-link d-flex align-self-center"><a id="calendar"><img src="image/calendar.png">Пн-Вс, 9:00-0:00</a></div>
+            <div class="navbar-link d-flex align-self-center"><a href="tel:+7(978)7253976"><img src="image/phone-call.png">+7 (978) 725 39 76</a></div>
+            <div class="navbar-link d-flex align-self-center"><a href="https://www.instagram.com/zolotaya_ribka_crimea"><img src="image/instagram-logo.png">zolotaya_ribka_crimea</a></div>
         </nav>
     </header>
     <content>
         <div class="info-text">
             <p>Мы работаем для вас с 1997 года</p>
-            <p>Здесь Вы познакомитесь с 20-ти летней традицией приготовления блюд и<br>
-                удивительной атмосферой,искусно приправленной<br>
+            <p>Здесь Вы познакомитесь с 20-ти летней традицией приготовления блюд и
+                удивительной атмосферой,искусно приправленной
                 мастерской рукой шефа.</p>
-            <p>Посетив однажды наше заведение Вы станете постоянным клиентом<br>
-                – Вам не захочется расставаться с уютной домашней атмосферой,<br>
+            <p>Посетив однажды наше заведение Вы станете постоянным клиентом
+                – Вам не захочется расставаться с уютной домашней атмосферой,
                 сопровождаемой вежливым обслуживанием и восхитительно вкусной
                 едой.</p>
-            <p>В нашем меню Вы найдете блюда на любой вкус<br>
+            <p>В нашем меню Вы найдете блюда на любой вкус
                 – от традиционных блюд кавказской кухни до стандартной европейской. </p>
-            <p>А в завершении приятной трапезы рекомендуем<br>
+            <p>А в завершении приятной трапезы рекомендуем
                 Вам отведать наши невероятные муссовые десерты, тающие во рту. </p>
 
             <p> В золотой рыбке, <br>
@@ -53,8 +48,8 @@
             <p class="d-flex align-self-center">Меню</p>
         </div>
         <div class="menu d-flex justify-content-center">
-            <iframe src="https://drive.google.com/file/d/13FhHuQMYGnJBHmFlA_QWyFaXjwMujBYd/preview" width="640"
-                height="880"></iframe>
+            <iframe src="https://drive.google.com/file/d/13FhHuQMYGnJBHmFlA_QWyFaXjwMujBYd/preview" width="800px"
+                height="100%"></iframe>
         </div>
         <div class="part d-flex justify-content-center">
             <p class="d-flex align-self-center">Как нас найти?</p>
@@ -62,6 +57,35 @@
         <div>
             <script type="text/javascript" charset="utf-8" async
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac2f85f66cc6550095bec00128cadba93be7204776b8e6377797b6803627e8b7a&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        </div>
+        <div class="part d-flex justify-content-center">
+            <p class="d-flex align-self-center">Больше фото</p>
+        </div>
+        <div class="container-inst d-flex justify-content-center">
+            <div id="averin_widget"></div>
+            <script src="https://averin.pro/widget_js/widget.js"></script>
+            <script>
+                let wid=(+window.innerWidth)*0.9+'px';
+                console.log(wid);
+                let widget = new myWidget('#averin_widget', {
+                    login: 'zolotaya_ribka_crimea',
+                    style: 1,
+                    width: wid,
+                    background: '#FFFFFF',
+                    header: 0,
+                    title: 0,
+                    title_text: 'Мы в Инстаграм',
+                    title_background: '#000000',
+                    title_text_color: '#FFFFFF',
+                    submit: 1,
+                    submit_background: '#FF0000',
+                    submit_text_color: '#FFFFFF',
+                    submit_text: 'Подписаться',
+                    gallery: 1,
+                    amount: 12,
+                    flex: '33.3%'
+                });
             </script>
         </div>
     </content>
