@@ -111,7 +111,7 @@ a:hover {
     }
 
     .navbar-logo {
-        margin: 10px;
+        margin: 5px;
     }
 
     .info-text{
@@ -125,6 +125,7 @@ a:hover {
     .navbar-logo{
         flex-direction: column;
         font-size: 5pt;
+        width:45%;
     }
     .navbar-logo img {
         height: 64px;
@@ -133,5 +134,6 @@ a:hover {
 
     #textlogo{
         margin:0px;
+        letter-spacing: -1px;
     }
 }
