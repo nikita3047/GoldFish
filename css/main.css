@@ -88,7 +88,11 @@ a:hover {
 .menu {
     background-color: #eebb9c;
     padding: 2%;
-    height:1150px;
+}
+
+.menu iframe{
+    width:640px;
+    height: 800px;
 }
 
 .container-inst {
@@ -118,7 +122,8 @@ a:hover {
         font-size:12pt;
     }
 
-    .menu{
+
+    .menu iframe{
         height:400px;
     }
 
